@@ -1,4 +1,4 @@
-name: Deploy Astro to FTP
+name: Deploy FTP Blog
 
 on:
   push:
