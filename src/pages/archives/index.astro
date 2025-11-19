@@ -16,24 +16,24 @@ if (!SITE.showArchives) {
 const posts = await getCollection("blog", ({ data }) => !data.draft);
 
 const months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
+  "Ocak",
+"Şubat",
+"Mart",
+"Nisan",
+"Mayıs",
+"Haziran",
+"Temmuz",
+"Ağustos",
+"Eylül",
+"Ekim",
+"Kasım",
+"Aralık",
 ];
 ---
 
-<Layout title={`Archives | ${SITE.title}`}>
+<Layout title={`Arşiv | ${SITE.title}`}>
   <Header />
-  <Main pageTitle="Archives" pageDesc="All the articles I've archived.">
+  <Main pageTitle="Arşiv" pageDesc="Arşivlenen tüm Bahis Sitesi makaleleri.">
     {
       Object.entries(
         getPostsByGroupCondition(posts, post =>

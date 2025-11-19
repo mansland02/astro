@@ -29,7 +29,7 @@ const isActive = (path: string) => {
     href="#main-content"
     class="absolute start-16 -top-full z-50 bg-background px-3 py-2 text-accent backdrop-blur-lg transition-all focus:top-4"
   >
-    Skip to content
+    İçeriğe Geç
   </a>
   <div
     id="nav-container"
@@ -69,18 +69,18 @@ const isActive = (path: string) => {
           ]}
         >
           <li class="col-span-2">
-            <a href="/posts" class:list={{ "active-nav": isActive("/posts") }}>
-              Posts
+            <a href="/bahis" class:list={{ "active-nav": isActive("/bahis") }}>
+              Bahis Rehberi
             </a>
           </li>
           <li class="col-span-2">
             <a href="/tags" class:list={{ "active-nav": isActive("/tags") }}>
-              Tags
+              Etiketler
             </a>
           </li>
           <li class="col-span-2">
-            <a href="/about" class:list={{ "active-nav": isActive("/about") }}>
-              About
+            <a href="/linkler" class:list={{ "active-nav": isActive("/linkler") }}>
+              Linkler 
             </a>
           </li>
           {
@@ -95,10 +95,10 @@ const isActive = (path: string) => {
                     },
                   ]}
                   ariaLabel="archives"
-                  title="Archives"
+                  title="Arşiv"
                 >
                   <IconArchive class="hidden sm:inline-block" />
-                  <span class="sm:sr-only">Archives</span>
+                  <span class="sm:sr-only">Arşiv</span>
                 </LinkButton>
               </li>
             )
@@ -114,7 +114,7 @@ const isActive = (path: string) => {
               title="Search"
             >
               <IconSearch />
-              <span class="sr-only">Search</span>
+              <span class="sr-only">Ara</span>
             </LinkButton>
           </li>
           {

@@ -25,7 +25,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
   <main id="main-content" data-layout="index">
     <section id="hero" class="pt-8 pb-6">
       <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
-        Mingalaba
+        Bahis Rehberi: Başlangıçtan Ustalığa Adım Adım Yol Haritanız
       </h1>
       <a
         target="_blank"
@@ -43,25 +43,22 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
       </a>
 
       <p>
-        AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro
-        blog theme. This theme follows best practices and provides accessibility
-        out of the box. Light and dark mode are supported by default. Moreover,
-        additional color schemes can also be configured.
+        "Bahis rehberi" arayan biri, bu dünyaya yeni adım atıyor ya da bilgisini derinleştirmek istiyor demektir. Doğru yerdesiniz. Bu kapsamlı <b>bahis rehberi</b>, bahis dünyasında güvenle ilerlemeniz için ihtiyaç duyacağınız tüm temel bilgileri, stratejileri ve ipuçlarını bir araya getiriyor. Amacımız, sadece şansa dayalı bir oyun olmaktan çıkıp, bilinçli ve stratejik bir aktiviteye dönüşmesine rehberlik etmektir.
       </p>
       <p class="mt-2">
-        Read the blog posts or check
+        Daha Fazla Bilgi için 
         <LinkButton
           class="underline decoration-dashed underline-offset-4 hover:text-accent"
-          href="https://github.com/satnaing/astro-paper#readme"
+          href="/bahis"
         >
-          README
-        </LinkButton> for more info.
+          Deneme Bonusları ve rehberi
+        </LinkButton> inceleyin.
       </p>
       {
         // only display if at least one social link is enabled
         SOCIALS.length > 0 && (
           <div class="mt-4 flex flex-col sm:flex-row sm:items-center">
-            <div class="me-2 mb-1 whitespace-nowrap sm:mb-0">Social Links:</div>
+            <div class="me-2 mb-1 whitespace-nowrap sm:mb-0">Sosyal Medya Linkleri:</div>
             <Socials />
           </div>
         )
@@ -74,7 +71,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
       featuredPosts.length > 0 && (
         <>
           <section id="featured" class="pt-12 pb-6">
-            <h2 class="text-2xl font-semibold tracking-wide">Featured</h2>
+            <h2 class="text-2xl font-semibold tracking-wide">Öne Çıkan Siteler</h2>
             <ul>
               {featuredPosts.map(data => (
                 <Card variant="h3" {...data} />
@@ -89,7 +86,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
     {
       recentPosts.length > 0 && (
         <section id="recent-posts" class="pt-12 pb-6">
-          <h2 class="text-2xl font-semibold tracking-wide">Recent Posts</h2>
+          <h2 class="text-2xl font-semibold tracking-wide">Bahis Siteleri Hakkında Yazılar</h2>
           <ul>
             {recentPosts.map(
               (data, index) =>
@@ -101,8 +98,8 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
     }
 
     <div class="my-8 text-center">
-      <LinkButton href="/posts/">
-        All Posts
+      <LinkButton href="/bahis/">
+        Tüm Bahis Rehberi Hakkındaki Yazılar
         <IconArrowRight class="inline-block rtl:-rotate-180" />
       </LinkButton>
     </div>
